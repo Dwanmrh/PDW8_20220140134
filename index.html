@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teman Sefrekuensi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dwan Friends</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#form">Form</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-white mb-3 text-center">Form Teman Sefrekuensi</h2>
+      <div class="card bg-dark text-white">
+        <div class="card-body">
+          <form id="friendForm">
+      <div class="card mb-3 mx-auto bg-dark" style="max-width: 400px">
+        <img src="./assets/Dwan.jpg" class="card-img-top" alt="Foto Dwan" />
+        <div class="card-body">
+          <h5 class="card-title text-white">Muhammad Ridwan Hidayatullah</h5>
+          <p class="card-text text-white">
+            Saya Muhammad Ridwan Hidayatullah, kuliah di Universitas
+            Muhammadiyah Yogyakarta, jurusan Teknologi Informasi, Angkatan 2022.
+            Saya memiliki hobi bermain game, olahraga, membaca buku,
+            mendengarkan musik, dan menonton film.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" class="container mt-5">
+      <div class="card bg-dark text-white">
+        <div class="card-body">
+          <form id="friendForm">
+            <!-- Nama -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <!-- Umur -->
+            <div class="mb-3">
+              <label for="age" class="form-label">Umur</label>
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                name="age"
+                required
+              />
+            </div>
+
+            <!-- Tanggal Lahir -->
+            <div class="mb-3">
+              <label for="birthdate" class="form-label">Tanggal Lahir</label>
+              <input
+                type="date"
+                class="form-control"
+                id="birthdate"
+                name="birthdate"
+                required
+              />
+            </div>
+
+            <!-- Status Pertemanan -->
+            <div class="mb-3">
+              <label class="form-label">Status Pertemanan</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="friendshipStatus"
+                  id="friend1"
+                  value="Teman Aja"
+                />
+                <label class="form-check-label" for="friend1">Teman Aja</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="friendshipStatus"
+                  id="friend2"
+                  value="Teman Deket"
+                  checked
+                />
+                <label class="form-check-label" for="friend2"
+                  >Teman Deket</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="friendshipStatus"
+                  id="friend3"
+                  value="Bestie"
+                />
+                <label class="form-check-label" for="friend3">Bestie</label>
+              </div>
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="mb-3">
+              <label class="form-label">Jenis Kelamin</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="Laki-Laki"
+                />
+                <label class="form-check-label" for="male">Laki-Laki</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="Perempuan"
+                  checked
+                />
+                <label class="form-check-label" for="female">Perempuan</label>
+              </div>
+            </div>
+
+            <!-- Hobi -->
+            <div class="mb-3">
+              <label class="form-label">Hobi</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="game"
+                  value="Main Game"
+                />
+                <label class="form-check-label" for="game">Main Game</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="sports"
+                  value="Olahraga"
+                />
+                <label class="form-check-label" for="sports">Olahraga</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="reading"
+                  value="Baca Buku"
+                />
+                <label class="form-check-label" for="reading">Baca Buku</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="music"
+                  value="Dengerin Musik"
+                />
+                <label class="form-check-label" for="music"
+                  >Dengerin Musik</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="movies"
+                  value="Nonton Film"
+                />
+                <label class="form-check-label" for="movies">Nonton Film</label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="outputModal"
+      tabindex="-1"
+      aria-labelledby="outputModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="outputModalLabel">Hasil Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="formOutput"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

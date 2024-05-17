@@ -1,0 +1,69 @@
+body {
+  padding-top: 56px; /* Untuk memberikan ruang pada navbar fixed-top */
+  background-color: #000000; /* Warna latar belakang */
+}
+
+.card {
+  max-width: 400px; /* Memperkecil kartu */
+  margin: 0 auto; /* Tengah-tengah kartu */
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-body {
+  text-align: left;
+}
+/* Card text styling */
+.card-text {
+  line-height: 1.6; /* Sesuaikan dengan kebutuhan untuk meningkatkan keterbacaan */
+}
+
+/* Form label styling */
+.form-label {
+  margin-bottom: 0.5rem; /* Tambahkan spasi antara label dan input */
+}
+
+/* Form input styling */
+.form-control {
+  margin-bottom: 1rem; /* Tambahkan spasi antara input */
+}
+
+/* Form check styling */
+.form-check-label {
+  margin-bottom: 0.5rem; /* Tambahkan spasi antara checkbox/radio button dan labelnya */
+}
+
+/* Button styling */
+.btn {
+  margin-top: 0.3rem; /* Tambahkan spasi di atas tombol submit */
+}
+
+/* Custom CSS for modal */
+.modal-content {
+  background-color: #212529;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-title {
+  color: #b78b09;
+}
+
+.btn-close {
+  color: #ffffff;
+}
+
+.btn-close:hover {
+  color: #b78b09;
+}
